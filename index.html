@@ -39,11 +39,12 @@
             animation: fadeIn 2s ease-in-out forwards;
         }
 .social {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+    position: fixed;
+    bottom: 10px; /* Ajuste para deixar mais perto da borda inferior */
+    right: 10px;  /* Ajuste para deixar mais perto da borda direita */
     display: flex;
     align-items: center; /* Alinha verticalmente o ícone e o texto */
+    z-index: 1000; /* Garante que o ícone e o texto fiquem sobre outros elementos */
 }
 
 .social img {
@@ -59,7 +60,7 @@
     font-size: 1.3em;
     text-decoration: none;
     font-weight: 500;
-    line-height: 2; /* Garante que o texto e o ícone estejam alinhados */
+    line-height: 1; /* Garante que o texto e o ícone estejam alinhados */
 }
 
         @keyframes fadeIn {
